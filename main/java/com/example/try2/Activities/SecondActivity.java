@@ -126,10 +126,12 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
                 if(mapFlag2 == true)
                 {
                     MapActivity.putMap(zoom2, latitude2, longitude2);
+                    mapFlag2 = false;
                 }
                 else if(mapFlag == true)
                 {
                     MapActivity.putMap(zoom, latitude, longitude);
+                    mapFlag = false;
                 }
 
                 mapF = false;
