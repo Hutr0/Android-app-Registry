@@ -1,4 +1,4 @@
-# registry
+# Registry
 This is my first Android app. I created it for an academic practice at my University.
 
 The main folder contains the application files.  
