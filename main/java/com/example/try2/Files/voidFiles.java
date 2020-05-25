@@ -579,7 +579,7 @@ public class voidFiles {
                             "Ошибка при загрузке XML-документа: " + t.toString(),
                             Toast.LENGTH_LONG).show();
                 }
-                SecondActivity.putMap(16, latitude, longitude);
+                SecondActivity.putMap2(16, latitude, longitude);
                 break;
             default:
                 break;
