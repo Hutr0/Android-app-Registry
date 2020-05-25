@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Activities.MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:backgroundTint="#2FF4A9"
+        android:ems="8"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/searchButton"
+        app:layout_constraintEnd_toStartOf="@+id/searchButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/recycle_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/exitButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchButton">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="125dp"
+        android:layout_height="35dp"
+        android:background="#2FF4A9"
+        android:text="Поиск"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#2FF4A9"
+        android:text="Очистить"
+        app:layout_constraintBottom_toBottomOf="@+id/searchButton"
+        app:layout_constraintEnd_toEndOf="@+id/recycle_view"
+        app:layout_constraintStart_toEndOf="@+id/searchButton"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/creatorButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Информация о студенте"
+        android:background="#2FF4A9"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/exitButton"
+        app:layout_constraintEnd_toStartOf="@+id/exitButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/exitButton" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="125dp"
+        android:layout_height="55dp"
+        android:background="#2FF4A9"
+        android:text="Карта"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/projectButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Информация о проекте"
+        android:background="#2FF4A9"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/exitButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/exitButton"
+        app:layout_constraintTop_toTopOf="@+id/exitButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
